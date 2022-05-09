@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FoodDeliveryService", "Food
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FoodDeliveryRepository", "FoodDeliveryRepository\FoodDeliveryRepository.csproj", "{83058F15-6647-4E82-B1F7-CDB9C474D6CF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ADO.NET Repository", "ADO.NET Repository\ADO.NET Repository.csproj", "{F679A2A2-5BBF-4EE2-97DB-F88D64B99D72}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "Common\Common.csproj", "{FAF2225D-624A-4206-9DE2-A35F2D6DD543}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{83058F15-6647-4E82-B1F7-CDB9C474D6CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{83058F15-6647-4E82-B1F7-CDB9C474D6CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{83058F15-6647-4E82-B1F7-CDB9C474D6CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F679A2A2-5BBF-4EE2-97DB-F88D64B99D72}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F679A2A2-5BBF-4EE2-97DB-F88D64B99D72}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F679A2A2-5BBF-4EE2-97DB-F88D64B99D72}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F679A2A2-5BBF-4EE2-97DB-F88D64B99D72}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FAF2225D-624A-4206-9DE2-A35F2D6DD543}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FAF2225D-624A-4206-9DE2-A35F2D6DD543}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FAF2225D-624A-4206-9DE2-A35F2D6DD543}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FAF2225D-624A-4206-9DE2-A35F2D6DD543}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

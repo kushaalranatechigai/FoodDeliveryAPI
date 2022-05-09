@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace FoodDelivery.Models
+namespace Common.EntityModels
 {
-    public class Restaurants
+    public class RestaurantsModel
     {
         public int Id { get; set; }
         public string Name { get; set; }

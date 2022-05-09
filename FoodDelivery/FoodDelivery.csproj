@@ -2,6 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
+    <UserSecretsId>0a6bf4f0-ba28-4b1b-95f3-0ba06d2182d2</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
@@ -9,7 +10,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\FoodDeliveryServices\FoodDeliveryServices\FoodDeliveryServices.csproj" />
     <ProjectReference Include="..\FoodDeliveryService\FoodDeliveryService.csproj" />
   </ItemGroup>
 
