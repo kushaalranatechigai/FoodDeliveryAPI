@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace FoodDeliveryService
+namespace ADO.NET_Repository
 {
     public class Class1
     {

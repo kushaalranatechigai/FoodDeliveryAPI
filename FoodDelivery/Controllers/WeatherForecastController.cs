@@ -1,9 +1,7 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Common.EntityModels;
+using FoodDeliveryService.Interfaces;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace FoodDelivery.Controllers
 {
@@ -11,6 +9,8 @@ namespace FoodDelivery.Controllers
     [Route("[controller]")]
     public class WeatherForecastController : ControllerBase
     {
+        private readonly IFoodDeliveryService _foodDeliveryService;
+
         private static readonly string[] Summaries = new[]
         {
             "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
@@ -18,22 +18,16 @@ namespace FoodDelivery.Controllers
 
         private readonly ILogger<WeatherForecastController> _logger;
 
-        public WeatherForecastController(ILogger<WeatherForecastController> logger)
+        public WeatherForecastController(ILogger<WeatherForecastController> logger, IFoodDeliveryService foodDeliveryService)
         {
             _logger = logger;
-        }
+            _foodDeliveryService = foodDeliveryService;
+        } 
 
-        [HttpGet]
-        public IEnumerable<WeatherForecast> Get()
+    [HttpGet]
+        public FoodCustom Get()
         {
-            var rng = new Random();
-            return Enumerable.Range(1, 5).Select(index => new WeatherForecast
-            {
-                Date = DateTime.Now.AddDays(index),
-                TemperatureC = rng.Next(-20, 55),
-                Summary = Summaries[rng.Next(Summaries.Length)]
-            })
-            .ToArray();
+            return _foodDeliveryService.GetFoodItems();
         }
     }
 }
